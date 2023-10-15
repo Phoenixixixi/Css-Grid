@@ -1,0 +1,148 @@
+1. Grid
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid; 
+  grid-template-columns: auto auto auto; // untuk menentukan columnnya jadi nilainya bisa diubah kalau auto ya akan menyesuaikan layar webnya
+  background-color: #2196F3;
+  padding: 10px; // ini jarak ke content
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;  
+  font-size: 30px;
+  text-align: center; 
+}
+</style>
+</head>
+<body>
+
+<h1>Grid Elements</h1>
+
+<p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
+
+<p>Direct child element(s) of the grid container automatically becomes grid items.</p>
+
+<div class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>  
+  <div class="grid-item">4</div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>  
+  <div class="grid-item">7</div>
+  <div class="grid-item">8</div>
+  <div class="grid-item">9</div>  
+</div>
+
+</body>
+</html>
+
+2. gap itu ada 3 : column-gap
+                   row-gap
+                   gap
+gap itu jarak space antar table gridnya
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid; 
+  column-gap: 50px; <------------------------------------------------------------------------------------------------ gapnya
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h1>The column-gap Property</h1>
+
+<p>Use the <em>column-gap</em> property to adjust the space between the columns:</p>
+
+<div class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>  
+  <div class="grid-item">4</div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>  
+  <div class="grid-item">7</div>
+  <div class="grid-item">8</div>
+  <div class="grid-item">9</div>  
+</div>
+
+</body>
+</html>
+
+
+
+
+3. grid-column-start
+   grid-column-end 
+   grid-row-start
+   grid-row-end
+
+untuk menyatukan kolom dan baris menyatu 
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column-start: 1;  <------------------------------------------------------------------------------------------------ grid column
+  grid-column-end: 2;
+}
+</style>
+</head>
+<body>
+
+<h1>Grid Lines</h1>
+
+<div class="grid-container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>  
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+  <div class="item6">6</div>
+  <div class="item7">7</div>
+  <div class="item8">8</div>  
+</div>
+
+<p>You can refer to line numbers when placing grid items.</p>
+
+</body>
+</html>
+
+
+
+
