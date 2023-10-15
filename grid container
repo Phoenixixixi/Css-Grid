@@ -1,0 +1,32 @@
+grid-column-start : 20px 30px auto {berisi 3 kolom}
+untuk mengatur panjang kolomnya
+grid-template-rows: 80px 200px; {ini berisi 2 baris}
+untuk mengatur panjang barisnya
+isi nilai disesuaikan dengan kolom dan baris yang kita inginkan
+
+
+justify-content digunakan untuk mengatur posisi horizontal dari item-grid di dalam wadah grid. Ini berlaku untuk baris dari grid, memungkinkan Anda mengatur cara penyebaran item-grid secara horizontal.
+
+align-content digunakan untuk mengatur posisi vertikal dari item-grid di dalam wadah grid. Ini berlaku untuk kolom dari grid, memungkinkan Anda mengatur cara penyebaran item-grid secara vertikal.
+
+
+start: Ini akan menempatkan item-grid di awal dari grid container.
+end: Ini akan menempatkan item-grid di akhir dari grid container.
+center: Ini akan mengatur item-grid ke tengah dari grid container.
+stretch: Ini akan meregangkan item-grid untuk mengisi seluruh lebar dari grid container.
+space-around: Ini akan memberikan ruang sekitar setiap item-grid.
+space-between: Ini akan memberikan ruang di antara setiap item-grid tetapi tidak di sekitar item-grid pertama dan terakhir.
+space-evenly: Ini akan memberikan ruang yang sama di antara setiap item-grid dan di sekitar item-grid pertama dan terakhir.\
+
+grid row and grid column
+
+grid-row: 1 / 3;
+grid-column: 1 / 4;
+
+grid-area: myArea; bisa dikasih variabel
+contoh : 
+.item1 {
+grid-area: area;
+} 
+.grid-template-area: { 'area area'; 
+}
